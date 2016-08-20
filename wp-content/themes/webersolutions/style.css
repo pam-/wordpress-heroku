@@ -1,0 +1,1110 @@
+/*
+
+Theme Name: WEBERSOLUTIONS
+
+Author: the webersolutions Team
+
+Description: The WEBERSOLUTIONS theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. 
+
+Version: 1.0
+
+Text Domain: webersolutions
+
+
+
+
+
+*/
+
+/**
+
+ * 1.0 Reset
+
+ *
+
+ * Modified from Normalize.css to provide cross-browser consistency and a smart
+
+ * default styling of HTML elements.
+
+ *
+
+ * @see http://git.io/normalize
+
+ * ----------------------------------------------------------------------------
+
+ */
+
+ 
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;            
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+}
+
+
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+	display: block;
+
+}
+
+
+
+/* Alignment */
+
+.alignleft {
+
+	display: inline;
+
+	float: left;
+
+	margin-right: 1em !important;
+
+}
+
+.alignright {
+
+	display: inline;
+
+	float: right;
+
+	margin-left: 1em !important;
+
+}
+
+.aligncenter {
+
+	clear: both;
+
+	display: block;
+
+	margin-left: auto;
+
+	margin-right: auto ;
+
+}
+
+
+
+img.alignleft,
+
+img.alignright,
+
+img.aligncenter {
+
+	margin-bottom: 1.625em;
+
+}
+
+
+
+/* =Global
+
+----------------------------------------------- */
+
+h1{ font-size:33px;}
+
+h2{ font-size:18px; color:#18ab08}
+
+h3{ font-size:15px;}
+
+h4{ font-size:13px;}
+
+h5{ font-size:12px;}
+
+h6{ font-size:10px;}
+
+
+
+hr {
+
+	background-color: #ccc;
+
+	border: 0;
+
+	height: 1px;
+
+	margin-bottom: 1.625em;
+
+}
+
+
+
+/* Text elements */
+
+p {
+	margin-bottom: 0;
+}
+
+
+
+ul, ol {
+
+		margin:10px 0 10px 0;
+
+}
+
+ul {
+
+	float: none;
+	width:auto
+
+}
+
+ul li {
+	 padding:0 0 0 11px; background:url(images/dot.jpg) no-repeat left 6px
+   	backface-visibility: none;
+	-webkit-backface-visibility: none; /* Chrome, Safari, Opera */
+	display: inline-block;
+	}
+
+ol {
+
+	list-style-type: decimal;
+	list-style-position: inside;
+	
+
+}
+
+
+ol ol {
+
+	list-style: upper-alpha;
+
+}
+
+ul ul, ol ol, ul ol, ol ul {
+
+	margin-bottom: 0;
+
+}
+
+dl {
+
+	margin: 0 1.625em;
+
+}
+
+dt {
+
+	font-weight: bold;
+
+}
+
+dd {
+
+	margin-bottom: 1.625em;
+
+}
+
+strong {
+
+	font-weight: bold;
+
+}
+
+cite, em, i {
+
+	font-style: italic;
+
+}
+
+blockquote {
+
+	font-family: Georgia, "Bitstream Charter", serif;
+
+	font-style: italic;
+
+	font-weight: normal;
+
+	margin: 10px 40px;
+	
+
+}
+
+blockquote em, blockquote i, blockquote cite {
+
+	font-style: normal;
+
+}
+
+blockquote cite {
+
+	color: #666;
+
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	font-weight: 300;
+
+	letter-spacing: 0.05em;
+
+	text-transform: uppercase;
+
+}
+
+
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+	content: "";
+
+}
+
+blockquote, q {
+
+	quotes: "" "";
+
+}
+
+a img {
+
+	border: 0;
+
+}
+
+
+
+pre {
+
+	background: #f4f4f4;
+
+	font: 13px "Courier 10 Pitch", Courier, monospace;
+
+	line-height: 1.5;
+
+	margin-bottom: 1.625em;
+
+	overflow: auto;
+
+	padding: 0.75em 1.625em;
+
+}
+
+
+
+sup,
+
+sub {
+
+	font-size: 10px;
+
+	height: 0;
+
+	line-height: 1;
+
+	position: relative;
+
+	vertical-align: baseline;
+
+}
+
+sup {
+
+	bottom: 1ex;
+
+}
+
+sub {
+
+	top: .5ex;
+
+}
+
+
+
+/* Links */
+
+a {
+	color: #efefef;
+	text-decoration: none;
+
+}
+
+
+
+a:focus,
+
+a:active,
+
+a:hover {
+	color: #18ab08;
+	text-decoration: none;
+
+}
+
+:focus {/* remember to define focus styles! */
+
+	outline: 0;
+
+}
+
+
+
+table {/* tables still need 'cellspacing="0"' in the markup */
+
+	border-collapse: separate;
+
+	border-spacing: 0;
+
+}
+
+caption, th, td {
+
+	font-weight: normal;
+
+	text-align: left;
+
+}
+
+input, textarea  { appearance: normal; -webkit-appearance: none !important;}
+
+
+
+/* ********************************************* End Common Css ******************************************************* */
+
+body,
+html {
+  width: 100%;
+  min-height: 100% !important;
+	font-family: 'steelfish_rgregular', Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+}
+
+.single-post, .page {
+	background: #000;
+}
+
+.current-menu-item a {
+	color: #18ab08;
+}
+
+.hamburger,
+.cross{
+	display: none;
+  background:none;
+  position:absolute;
+  top:11%;
+  right:8%;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+}
+
+.hamburger{
+  line-height:45px;
+}
+.cross{
+  line-height:65px;
+  font-size:3em;
+}
+
+.hamburger.showing,
+.cross.showing{
+	display: block;
+}
+
+.mobile-menu {
+	display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 7;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  font-size: 33px;
+  color: #fff;
+}
+
+.mobile-menu ul{
+	height: 100vh;
+	padding-top: 20%;
+	text-align: center;
+}
+.mobile-menu li{
+	display: block;
+	padding: 30px;
+}
+
+.mobile-menu.open {
+	display: block;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+.sub-menu{
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+
+.sub-menu li {
+	display: block;
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+.slider_container,
+.overlay.index,
+.overlay.whole {
+	display: block;
+	z-index: 1;
+	position: absolute;
+}
+
+.overlay.index {
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	background: rgba(0,0,0,0.3);
+}
+
+.overlay.whole {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+.slider_container {
+ top: 0;bottom: 0;left: 0;right: 0;
+ z-index: 0;
+ height: 90%;
+}
+
+header {
+	text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.masthead-brand {
+  margin: 4% 8%;
+}
+
+.masthead-brand img {
+	max-width: 300px;
+}
+.masthead-nav {
+	text-transform: uppercase;
+	margin: 4% 4%;
+}
+
+.masthead-nav a{
+	font-size: 33px;
+}
+
+.m-title__blog {
+	letter-spacing: 2px;
+	font-size: 68px;
+	color: #18ab08;
+}
+
+.m-title__blog span {
+	display: none;
+}
+
+.m-title__blog .about {
+	font-family: 'Open Sans';
+	letter-spacing: 0;
+	display: block;
+	font-size: 18px;
+	max-width: 480px;
+	padding: 0;
+	font-weight: bolder;
+	text-align: left;
+}
+
+nav {
+	padding: 0 118px;
+}
+
+.slider {
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.body_container,
+.m-page__wrapper {
+  position: relative;
+  z-index: 2;
+	width: 100%;
+  justify-content: flex-start;
+  margin-left: 8%;
+}
+
+.about {
+	color: rgba(239,239,239, 1);
+	line-height: 1.2em;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+.body_container h1,
+.m-page__wrapper h1 {
+	padding: 18px;
+}
+
+.body_container .m-link__blocks,
+.m-page__wrapper .m-link__blocks{
+	text-transform: uppercase;
+  background: rgba(24,171,8, 0.2);
+  border: 1px solid rgba(24,171,8, 1);
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin-right: 20px;
+  vertical-align:top;
+}
+
+.body_container .m-link__blocks:hover{
+	background: rgba(239,239,239, 0.8);
+}
+
+.body_container .m-link__blocks:hover a{
+	color: #18ab08;
+}
+
+.body_container .m-link__single,
+.m-page__wrapper .m-link__single {
+	padding-top: 25%;
+}
+
+.page .m-page__wrapper {
+  position: relative;
+  font-size: 1.1em;
+  font-weight: bold;
+  overflow-y: scroll;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.m-page__wrapper .blurb {
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+  width: 80%;
+  color: #fff;
+}
+
+.m-page__wrapper .blurb span{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.m-service__box {
+	background: rgba(239,239,239, 0.8);
+	height: 100vh;
+	padding: 100px;
+}
+
+.m-page__title {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 10px
+}
+
+.LOGISTICS {
+  background: url('images/backgrounds/construction.jpg') no-repeat;
+}
+
+.STAFFING, .Careers {
+  background: url('images/backgrounds/staffing.jpg') no-repeat;
+}
+
+.INFORMATION {
+  background: url('images/backgrounds/tech.jpeg') no-repeat;
+}
+
+.Services {
+	background: url('images/backgrounds/milkman.jpeg') no-repeat;
+}
+
+.About {
+	background: url('images/backgrounds/milkman.jpeg') no-repeat;
+}
+
+.About--title{
+	display: none;
+}
+
+.body_container.single,
+.STAFFING,
+.LOGISTICS,
+.INFORMATION,
+.Services,
+.Careers,
+.About {
+	position: absolute;
+  z-index: 0;
+  left: 0;right: 0; bottom: 0; top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.content_container, .m-page__wrapper {
+  position: relative;
+  z-index: 3;
+  top: 25%;
+  left: 8%;
+  right: 8%;
+  color: #fff;
+}
+
+.content_container article {
+	height: 500px;
+	padding: 18px;
+	width: 80%;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	font-size: 1.2em;
+	margin-bottom: 30px;
+	overflow-y: scroll;
+}
+
+.content_container article .ul,
+.blurb .ul {
+	display: inline-block;
+	margin: 10px;
+}
+
+.blurb button{
+	margin: 20px 0;
+}
+
+.blurb .italic {
+	margin-bottom: 10px;
+}
+
+.blurb strong {
+	color: #18ab08;
+}
+
+.blurb img {
+	float: right;
+	margin: 10px;
+}
+
+.content_container article .ul .li,
+.blurb .ul .li{
+	padding:2px 0 2px 17px;
+	background: url(images/dot.jpg) no-repeat left 6px;
+	display: block;
+}
+
+.content_container .entry-content {
+	margin: 10px 0 30px 0;
+}
+
+footer {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-top: 20%;
+	color:#fff;
+}
+
+footer .wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer p {
+ margin-bottom: 1.2em;
+}
+
+/*// MEDIA QUERIES*/
+
+@media only screen and (max-width: 450px) and (max-height:800px){
+	body {
+		background: url('images/backgrounds/milkman.jpeg') no-repeat;
+		background-size: cover;
+	}
+	.hamburger.showing, .cross.showing{
+		display: block;
+	}
+	.overlay.index {
+	  background: rgba(0,0,0,0.6);
+  }
+	nav {
+		display: none;
+	}
+	.slider_container {
+		display: none;
+	}
+	.masthead, .mastfoot, .cover-container {
+    width: 100%;
+	}
+	.masthead {
+    position: absolute;
+    top: 0;
+	}
+	.content_container,
+	.m-page__wrapper{
+		left: 0;
+	}
+	.masthead-brand {
+    float: none;
+    text-align: left;
+	}
+	.masthead-nav {
+    float: none;
+	}
+	.m-title__blog {
+		font-size: 53px;
+	}
+	.m-title__blog .about{
+		text-align: center;
+		display: none;
+	}
+	.body_container,
+	.m-page__wrapper {
+    display: flex;
+	  justify-content: space-around;
+	  margin-left: 0;
+	}
+
+	.page .m-page__wrapper,
+	.content_container article {
+		height: 322px;
+	}
+	.body_container .m-link__blocks,
+	.m-page__wrapper .m-link__blocks{
+		display: block;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		height: 4em;
+	}
+	.body_container .m-link__blocks h1,
+	.m-page__wrapper .m-link__blocks h1 {
+		padding: 10px;
+		margin-top: 5px;
+		position: relative;
+		bottom: 10px;
+		font-size: 1.5em;
+	}
+	.body_container .m-link__single,
+	.m-page__wrapper .m-link__single {
+		padding-top: 0;
+	}
+	.blurb img {
+		float: none;
+		margin: 0;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	body {
+		background: #000;
+	}
+	.slider_container {
+		display: block;
+	}
+	.masthead, .mastfoot, .cover-container {
+    width: 100%;
+	}
+	.masthead {
+    position: absolute;
+    top: 0;
+	}
+	.masthead-brand {
+    float: none;
+    text-align: center;
+	}
+	.masthead-nav {
+    float: none;
+	}
+	.m-title__blog .about{
+		text-align: center;
+		display: none;
+	}
+	.body_container,
+	.m-page__wrapper {
+    display: flex;
+	  justify-content: space-around;
+	  margin-left: 0;
+	}
+	.body_container .m-link__blocks, .m-page__wrapper .m-link__blocks {
+		height: 200px;
+	  width: 200px;
+	  margin-top: 30%;
+	}
+	footer {
+	  margin-top: 10%;
+	}
+}
+
+@media only screen and (min-width: 965px) {
+	body {
+		background: #000;
+	}
+	.slider_container {
+		display: block;
+	}
+	.masthead, .mastfoot, .cover-container {
+    width: 100%;
+	}
+	.masthead {
+    position: absolute;
+    top: 0;
+	}
+	.masthead-brand {
+    float: none;
+    text-align: center;
+	}
+	.masthead-nav {
+    float: none;
+	}
+	.m-title__blog .about{
+		text-align: center;
+		display: none;
+	}
+	.body_container,
+	.m-page__wrapper {
+    display: flex;
+	  justify-content: space-around;
+	  margin-left: 0;
+	}
+	.body_container .m-link__blocks {
+		height: 250px;
+	  width: 250px;
+	  margin-top: 4em;
+	}
+	.m-page__wrapper .m-link__blocks {
+			height: 250px;
+		  width: 250px;
+		  margin-top: 2em;
+		  margin-bottom: 2em;
+		}
+	footer {
+	  margin-top: 14%;
+	}
+	.single-post footer,
+	.page-template-default footer {
+		margin-top: 6%;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	body {
+		background: #000;
+	}
+	.slider_container {
+		display: block;
+	}
+	.masthead, .mastfoot, .cover-container {
+    width: 100%;
+	}
+	.masthead {
+    position: absolute;
+    top: 0;
+	}
+	.masthead-brand {
+		text-align: left;
+    float: left;
+	}
+	.masthead-nav {
+    float: right;
+	}
+	.m-title__blog .about{
+		text-align: left;
+		display: block;
+	}
+	.body_container,
+	.m-page__wrapper {
+    display: flex;
+	  justify-content: space-around;
+	  margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+	.body_container .m-link__blocks, .m-page__wrapper .m-link__blocks {
+	  text-transform: uppercase;
+	  background: rgba(24,171,8, 0.2);
+	  border: 1px solid rgba(24,171,8, 1);
+	  display: inline-block;
+	  height: 200px;
+	  width: 200px;
+	  margin-right: 20px;
+	  vertical-align: top;
+	  margin-top: 0;
+	}
+	footer {
+	  margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width: 500px) and (min-height: 450px) and (orientation: landscape) {
+	.m-title__blog .about{
+		display: none;
+	}
+	.masthead-nav a {
+    font-size: 26px;
+	}
+	.body_container .m-link__blocks:first-child {
+		margin-left: 5%;
+	}
+	.body_container{
+		margin-left: 0;
+	}
+	.body_container .m-link__blocks, .m-page__wrapper .m-link__blocks {
+	  text-transform: uppercase;
+	  background: rgba(24,171,8, 0.2);
+	  border: 1px solid rgba(24,171,8, 1);
+	  display: inline-block;
+	  height: 45%;
+	  width: 25%;
+	  margin-right: 20px;
+	  vertical-align: top;
+	  margin-top: 0;
+	  margin-left: 3%;
+	}
+	.body_container h1, .m-page__wrapper h1 {
+    padding: 8px 0;
+    font-size: 30px;
+  }
+	.content_container,
+	.m-page__wrapper{
+		left: 0;
+	}
+	.content_container article,
+	.page .m-page__wrapper{
+		height: 380px;
+	}
+	.m-page__wrapper .m-link__blocks {
+		margin-top: 0;
+		width: 10em;
+	}
+	footer {
+	  margin-top: 10%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-height: 450px) and (orientation: landscape) {
+	.m-title__blog .about{
+		display: none;
+	}
+	.body_container{
+		margin-left: 0;
+	}
+	.body_container .m-link__blocks, .m-page__wrapper .m-link__blocks {
+	  text-transform: uppercase;
+	  background: rgba(24,171,8, 0.2);
+	  border: 1px solid rgba(24,171,8, 1);
+	  display: inline-block;
+	  height: 200px;
+	  width: 27%;
+	  margin-right: 20px;
+	  vertical-align: top;
+	  margin-top: 0;
+	  margin-left: 3%;
+	}
+	.body_container h1, .m-page__wrapper h1 {
+    padding: 8px;
+  }
+	.content_container,
+	.m-page__wrapper{
+		left: 0;
+	}
+	.content_container article,
+	.page .m-page__wrapper{
+		height: 380px;
+	}
+	.m-page__wrapper .m-link__blocks {
+		margin-top: 0;
+		width: 10em;
+	}
+	footer {
+	  margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width: 1050px) and (min-height: 450px) and (orientation: landscape) {
+	.content_container,
+	.m-page__wrapper{
+		left: 0;
+	}
+	.content_container article,
+	.page .m-page__wrapper{
+		height: 380px;
+	}
+	.m-page__wrapper .m-link__blocks {
+		margin-top: 0;
+		width: 10em;
+	}
+	footer {
+	  margin-top: 10%;
+	}
+}
